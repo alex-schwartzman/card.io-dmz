@@ -261,6 +261,7 @@
 #ifdef _OPENMP
 #include <omp.h>
 #endif /* _OPENMP */
+#include "dmz_constants.h"
 
 #ifdef PYREX_WITHOUT_ASSERTIONS
 #define CYTHON_WITHOUT_ASSERTIONS
@@ -322,7 +323,7 @@ static CYTHON_INLINE size_t __Pyx_PyInt_AsSize_t(PyObject*);
   #define likely(x)   (x)
   #define unlikely(x) (x)
 #endif /* __GNUC__ */
-    
+
 static PyObject *__pyx_m;
 static PyObject *__pyx_b;
 static PyObject *__pyx_empty_tuple;
@@ -5278,7 +5279,7 @@ static PyObject *__pyx_pf_3dmz_3dmz_10scan_card(CYTHON_UNUSED PyObject *__pyx_se
  *                                                      )
  * 
  */
-  __pyx_t_1 = __Pyx_PyInt_to_py_uint16_t(__pyx_v_result.hseg.pattern_offset); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 428; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_to_py_uint16_t(__pyx_v_result.hseg.pattern_offset); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = kCreditCardTargetWidth; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_t_2, ((PyObject *)__pyx_n_s__pattern_offset), __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 424; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
